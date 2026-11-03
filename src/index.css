@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Aref+Ruqaa:wght@700&family=Katibeh&display=swap');
+@import 'tailwindcss';
+
+/* Design tokens and keyframes only; component styling lives in JSX utilities. */
+@theme {
+  --font-cairo: 'Cairo', sans-serif;
+  --font-monogram: 'Aref Ruqaa', 'Katibeh', 'Cairo', serif;
+  --font-editorial: 'Cormorant Garamond', 'Cairo', serif;
+  --font-romantic: 'Cormorant Garamond', serif;
+
+  --animate-seal-pulse: seal-pulse 2.2s ease-out infinite;
+  --animate-butterfly-flutter: butterfly-flutter 1.8s ease-in-out infinite;
+
+  @keyframes seal-pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    100% { transform: scale(1.55); opacity: 0; }
+  }
+
+  @keyframes butterfly-flutter {
+    0%, 100% { transform: scaleX(1) rotate(-1deg) translateY(0); }
+    50% { transform: scaleX(0.9) rotate(2deg) translateY(-4px); }
+  }
+}
+
+/* Global defaults retain the original document's appearance and accessibility. */
+@layer base {
+  :root {
+    @apply font-cairo text-[#302924] bg-[#f7f2eb];
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  html { @apply scroll-smooth; }
+  body { @apply m-0 min-w-[320px]; }
+  button, a { font: inherit; }
+  a { @apply text-inherit no-underline; }
+  button:focus-visible, a:focus-visible {
+    @apply outline-2 outline-solid outline-[#ab8469] outline-offset-[5px];
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; }
+  }
+}
