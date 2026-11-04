@@ -108,7 +108,7 @@ export default function SaveTheDateSection() {
           <span className="mb-[6px] inline-grid h-[34px] w-[34px] place-items-center rounded-full bg-[rgba(255,255,248,.7)] text-[22px] text-[#758160]" aria-hidden="true">⌖</span>
           <p className="m-0 text-[12px] text-[#8a8c75]">الموقع</p>
           <h2 className="m-[5px_0_7px] text-[18px] font-medium text-[#545849]" id="save-date-title">البرانية - اشمون</h2>
-          <p className="m-0 text-[13px] leading-[1.8] text-[#777967]">قاعة ريم لاند</p>
+          <p className="m-0 text-[13px] leading-[1.8] text-[#777967]">قاعة ريم لاند الاولي</p>
         </div>
 
         <CalendarGrid />
