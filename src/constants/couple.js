@@ -14,7 +14,7 @@ export const COUPLE_INITIALS = {
 
 // موعد الفرح — عدّله من هنا فقط
 export const EVENT = {
-  weekday: 'الأحد',
+  weekday: 'جمعة',
   date: '20 / 11 / 2026',
   period: 'مساء',
   time: '7:00',
