@@ -15,7 +15,10 @@ export default function Monogram() {
         {COUPLE_INITIALS.groom}
       </span>
       <span
-        className="-ms-[.4em] block bg-clip-text text-transparent [background-image:linear-gradient(165deg,#d8b98f_0%,#a88259_48%,#7d5d42_100%)] [filter:drop-shadow(0_1.5px_0_rgba(255,250,241,.9))_drop-shadow(0_8px_12px_rgba(125,93,66,.28))] text-[length:10.5rem] [transform:translateY(-.0em)]"
+        className="block bg-clip-text text-transparent 
+        [background-image:linear-gradient(165deg,#d8b98f_0%,#a88259_48%,#7d5d42_100%)] 
+        [filter:drop-shadow(0_1.5px_0_rgba(255,250,241,.9))_drop-shadow(0_8px_12px_rgba(125,93,66,.28))] 
+        text-[length:19.5rem] [transform:translateY(-.2em)] -ms-[.2em] "
         aria-hidden="true"
       >
         {COUPLE_INITIALS.bride}
